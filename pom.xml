@@ -5,6 +5,8 @@
     <modules>
         <module>Order</module>
         <module>Stock</module>
+        <module>Order-nacos</module>
+        <module>Stock-nacos</module>
     </modules>
 
     <groupId>com.wind</groupId>
