@@ -1,9 +1,9 @@
 server:
-  port: 8011
+  port: 8022
 
 spring:
   application:
-    name: stock-service
+    name: order-service
   cloud:
     nacos:
       server-addr: 127.0.0.1:8848
@@ -11,4 +11,3 @@ spring:
         username: nacos
         password: nacos
         namespace: public
-        ephemeral: true

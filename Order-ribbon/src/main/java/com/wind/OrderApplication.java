@@ -14,7 +14,6 @@ import org.springframework.web.client.RestTemplate;
  *  EnableDiscoveryClient 注解可加可不加
  */
 @SpringBootApplication
-
 public class OrderApplication {
 
 
@@ -22,10 +21,10 @@ public class OrderApplication {
         SpringApplication.run(OrderApplication.class);
     }
 
-    @Bean
-    @LoadBalanced
-    public RestTemplate restTemplate(RestTemplateBuilder builder) {
-
-        return builder.build();
-    }
+//    @Bean
+//    @LoadBalanced
+//    public RestTemplate restTemplate(RestTemplateBuilder builder) {
+//
+//        return builder.build();
+//    }
 }
