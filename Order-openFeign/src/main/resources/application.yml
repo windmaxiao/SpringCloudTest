@@ -15,9 +15,15 @@ logging:
   level:
     com.wind.feign: debug
 
-#feign日志局部配置
-#feign:
-#  client:
-#    config:
-#      product-service:
-#        logger-level: full
+# feign日志局部配置
+feign:
+  client:
+    config:
+      product-service:
+        logger-level: full
+        # 链接超时时间 默认2s
+        connect-timeout: 5000
+        # 请求处理超时时间 默认5s
+        read-timeout: 100000
+        request-interceptors:
+          - com.wind.Interceptor.FeignInterceptor
